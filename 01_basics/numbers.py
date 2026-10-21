@@ -41,3 +41,31 @@ math.floor(-3.2) # output: -4
 #trunc - basically trunc will give us the value towards zero. For eg: if we have 3.7 then trunc will give us 3 and if we have -3.2 then trunc will give us -3.
 math.trunc(3.7) # output: 3
 math.trunc(-3.2) # output: -3
+
+#octal numbers 
+0o20 # output: 16 so o represents octal number system. 2*8^1 + 0*8^0 = 16
+oct(64) # output: '0o100' so oct() function is used to convert decimal number to octal number. 1*8^2 + 0*8^1 + 0*8^0 = 64
+
+#Hexadecimal numbers
+0x20 # output: 32 so x represents hexadecimal number system. 2*16^1 + 0*16^0 = 32
+hex(32) # output: '0x20' so hex() function is used to convert decimal number to hexadecimal number. 2*16^1 + 0*16^0 = 32
+
+#Binary numbers
+0b1000 # output: 8 so b represents binary number system base 2. 1*2^3 + 0*2^2 + 0*2^1 + 0*2^0 = 8
+bin(8) # output: '0b1000' so bin() function is used to convert decimal number to binary number. 1*2^3 + 0*2^2 + 0*2^1 + 0*2^0 = 8
+
+###-----------------SETS------------------------
+
+setone = {1, 2, 3, 4, 5}
+setone & {3,4} # output : {3, 4} so & operator is used to find the intersection of two sets. It will return the common elements in both sets.
+setone | {3,4} # output : {1, 2, 3, 4, 5} so | operator is used to find the union of two sets. It will return all the elements in both sets.
+
+setone - {1,2,3,4,5} # output : set() here we get set() not empty {} because {} is dictionary 
+
+# there is one more thing if we want to check if two variable point to same object in memory then we can use is operator. For eg:
+
+# as we know in most of places we treat true is 1 and false is 0 but in python true is not equal to 1 and false is equal to 0.
+print(True == 1) # output: True
+print(False == 0) # output: True    
+
+print(True is 1) # output: False because internally True is not equal to 1 and False is not equal to 0. so we can use is operator to check if two variable point to same object in memory or not.
